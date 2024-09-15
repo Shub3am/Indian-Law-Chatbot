@@ -38,7 +38,7 @@ export default function Home() {
             <div className="h-72 p-6 overflow-y-auto">
               {/* Chat messages would go here */}
               <p className="text-gray-600 text-center">
-                Start your legal query below. We're here to assist you!
+                Start your legal query below. We are here to assist you!
               </p>
             </div>
             {loading && (
