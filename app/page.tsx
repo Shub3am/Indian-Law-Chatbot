@@ -29,7 +29,7 @@ export default function Home() {
             </div>
             <div className="bg-blue-50 p-4 border-b border-blue-100">
               <h2 className="text-lg font-semibold text-blue-800">
-                Theme: Citizen-Centric Governance
+                Theme: Citizen-Centric and Open Innovation
               </h2>
               <p className="text-sm text-blue-600">
                 Bringing legal support closer to every citizen
