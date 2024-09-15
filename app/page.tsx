@@ -93,6 +93,7 @@ export default function Home() {
               <button
                 onClick={async () => {
                   console.log("called", querys);
+                  setMessages([]);
                   setLoading(true);
                   const getResponse = await fetch(
                     process.env.NEXT_PUBLIC_BACKEND + "/query",
