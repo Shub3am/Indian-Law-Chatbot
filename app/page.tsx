@@ -23,6 +23,23 @@ export default function Home() {
               <h1 className="text-2xl font-bold text-center text-yellow-500 mt-2">
                 LEGAL SAATHI
               </h1>
+              <p className="text-center text-gray-300 mt-2">
+                Empowering Citizens through Legal Assistance
+              </p>
+            </div>
+            <div className="bg-blue-50 p-4 border-b border-blue-100">
+              <h2 className="text-lg font-semibold text-blue-800">
+                Theme: Citizen-Centric Governance
+              </h2>
+              <p className="text-sm text-blue-600">
+                Bringing legal support closer to every citizen
+              </p>
+            </div>
+            <div className="h-72 p-6 overflow-y-auto">
+              {/* Chat messages would go here */}
+              <p className="text-gray-600 text-center">
+                Start your legal query below. We're here to assist you!
+              </p>
             </div>
             {loading && (
               <div className="flex flex-col gap-4 absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
@@ -34,7 +51,7 @@ export default function Home() {
                 </h2>
               </div>
             )}
-            <div className="h-96 p-6 overflow-y-scroll text-black">
+            <div className="p-6 overflow-y-scroll text-black">
               {messages.map((message, index) => (
                 <p key={index}>{message}</p>
               ))}
