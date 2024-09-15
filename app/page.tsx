@@ -71,6 +71,14 @@ export default function Home() {
                 Submit Query
               </button>
             </div>
+            <footer className="bg-gray-100 p-4 text-center text-sm text-gray-600">
+              <p>Built by Team OnCall Engineers</p>
+              <p className="mt-1">
+                Members: Shubham Vishwakarma, Monash Kumar Verma, Twinkle
+                Dhingra, Abhishek Mohan
+              </p>
+              <p>Project for Code the cubicle 3.0</p>
+            </footer>
           </div>
         </div>
       </main>
