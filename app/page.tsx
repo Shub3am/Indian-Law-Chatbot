@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 export default function Home() {
   const [messages, setMessages] = useState<string[]>([]);
-  const [loading, setLoading] = useState<boolean>(true);
+  const [loading, setLoading] = useState<boolean>(false);
   const [querys, setQuery] = useState<string>("");
   return (
     <div className="">
