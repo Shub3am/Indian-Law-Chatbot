@@ -96,7 +96,7 @@ export default function Home() {
                   setMessages([]);
                   setLoading(true);
                   const getResponse = await fetch(
-                    process.env.NEXT_PUBLIC_BACKEND + "/query",
+                    process.env.NEXT_PUBLIC_BACKEND,
                     {
                       method: "POST",
                       body: JSON.stringify({
@@ -105,8 +105,8 @@ export default function Home() {
                       headers: { "content-type": "application/json" },
                     }
                   ).then((res) => res.json());
-                  console.log(getResponse);
-                  setMessages([...messages, getResponse.answer]);
+
+                  setMessages([...messages, getResponse.response]);
                   setQuery("");
                   setLoading(false);
                 }}
